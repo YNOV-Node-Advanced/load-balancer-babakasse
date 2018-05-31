@@ -1,9 +1,9 @@
 {
-  "name": "load-balancer-TZK-",
+  "name": "load-balancer-babakasse",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:YNOV-Node-Advanced/load-balancer-TZK-.git",
-  "author": "TZK- <contact@tzk.fr>",
+  "repository": "git@github.com:YNOV-Node-Advanced/load-balancer-babakasse.git",
+  "author": "babakasse <babakasse@yahoo.fr>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.3"
