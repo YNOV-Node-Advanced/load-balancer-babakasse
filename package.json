@@ -6,6 +6,8 @@
   "author": "babakasse <babakasse@yahoo.fr>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "request": "^2.81.0"
   }
 }

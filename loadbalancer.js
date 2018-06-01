@@ -6,16 +6,7 @@ const server = http.createServer().listen(PORT);
 
 let portIndex = 0;
 
-function roundRobinPort () {
-    const port = PORTS[portIndex];
-    portIndex++;
 
-    if (portIndex > PORTS.length - 1) {
-        portIndex = 0;
-    }
-
-    return port;
-}
 
 function randomPort () {
     return PORTS[Math.floor(Math.random() * (PORTS.length - 1))];
@@ -35,3 +26,13 @@ server.on("request", (req, res) => {
 
     req.pipe(connector);
 });
+
+function roundRobinPort () {
+    const port = PORTS[portIndex];
+    portIndex++;
+
+    if (portIndex > PORTS.length - 1) {
+        portIndex = 0;
+    }
+    return port;
+}

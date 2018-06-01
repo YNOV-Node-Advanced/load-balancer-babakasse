@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 
-const PORT = (process.env.PORT).trim() || 3000;
+const PORTS = (process.env.PORT).trim() || 3000;
 
 app.get("/", function(req, res) {
-    res.send("Hello World from " + PORT);
+    res.send("Hello World from " + PORTS);
 });
 
-app.listen(PORT, () => console.log("Server listening on http://localhost:" + PORT));
+app.listen(PORTS, () => console.log("Server listening on http://localhost:" + PORT));
